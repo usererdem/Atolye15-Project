@@ -2,18 +2,11 @@
 $color-primary: #0069FF;
 $color-primary-light: #4490FC;
 $color-primary-dark: #0459D2;
+$color-primary-gradient: linear-gradient(to right bottom, #55c57a, #286313);
 
 $color-alert-green: #01AF1B;
 $color-alert-red: #EB1717;
-
-$color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
-$color-primary-darker: #286313;
-$color-primary-gradient: linear-gradient(to right bottom, #55c57a, #286313);
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-$color-grey-dark-4: #1c1d25;
-$color-slate: #a4abc0;
 
 $color-grey-light-1: #FAFAFA;
 $color-grey-light-2: #EEEEEE;
@@ -21,22 +14,10 @@ $color-grey-light-2: #EEEEEE;
 $color-grey-dark: #B8B8B8;
 $color-grey-dark-2: #666666;
 $color-grey-dark-3: #222222;
+$color-grey-dark-4: #1c1d25;
 
 $color-white: #fff;
 $color-black: #000;
-
-$color-instagram: radial-gradient(
-  137.27% 137.27% at 9.89% 100%,
-  #fdf497 0%,
-  #fdf497 7.29%,
-  #fd5949 42.71%,
-  #d6249f 63.54%,
-  #285aeb 100%
-);
-$color-github: #3f444b;
-$color-linkedin: #0077b5;
-
-$color-gradient: linear-gradient(45deg, #7ed56f, #28b485, #2998ff, #5643fa);
 
 // FONT
 $default-font-size: 1.4rem;

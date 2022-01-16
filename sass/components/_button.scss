@@ -19,11 +19,6 @@
   &:hover {
     transform: translateY(-1px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    
-   /*  &::after {
-      transform: scaleX(1.2) scaleY(1.4);
-      opacity: 0;
-    }  */
   }
 
   &:active,
@@ -36,19 +31,6 @@
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
-  &--green {
-    background-color: $color-primary;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-primary;
-    }
   }
 
   &--blue {
@@ -68,7 +50,7 @@
       background: $color-primary-gradient;
     }
   }
-  
+
   &::after {
     content: "";
     display: inline-block;
@@ -80,7 +62,6 @@
     left: 0;
     z-index: -1;
     transition: all 0.4s;
-    
   }
 
   &--animated {
@@ -88,16 +69,13 @@
     animation-fill-mode: backwards;
   }
 
-  @include respond(phone) {
-    &,
-    &:link,
-    &:visited {
-      font-size: $big-font-size;
-    }
-
-    &--header {
-      margin-bottom: 1.5rem;
-      max-width: 180px;
+  @include respond(tab-port) {
+    &--green-gradient {
+      &,
+      &:link,
+      &:visited {
+        padding: 2.5rem 3.5rem;
+      }
     }
   }
 }
@@ -127,6 +105,9 @@
     color: $color-primary;
     border: 2px solid $color-primary;
   }
+
+  @include respond(tab-port) {
+  }
 }
 
 .hexagon {
@@ -137,7 +118,7 @@
   background-color: $color-alert-green;
   border-radius: ($hexagon-size / 10);
   transition: transform 150ms ease;
-  
+
   &:hover {
     transform: rotate(15deg);
     background-color: $color-primary;
@@ -146,13 +127,11 @@
     &:after {
       background-color: $color-primary;
     }
-
-    
   }
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -164,19 +143,15 @@
     background-image: inherit;
     border-radius: inherit;
     background-color: $color-alert-green;
-
-    
   }
-    
+
   &:before {
     transform: rotate(60deg);
   }
-  
+
   &:after {
     transform: rotate(-60deg);
   }
-
-  
 
   &__text {
     &,

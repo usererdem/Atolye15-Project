@@ -61,6 +61,7 @@ menu.addEventListener('click', function() {
   menuButton.classList.toggle('navigation--hide');
   menuLogin.classList.toggle('navigation--hide');
   menuBackground.classList.toggle('nav-container--white');
+  navigation.classList.remove("navigation--shadow");
 })
 
 /* -------------------- First li opener ------------------ */
