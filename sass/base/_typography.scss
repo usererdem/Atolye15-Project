@@ -2,8 +2,8 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1.7;
-  color: $color-grey-dark;
+  line-height: 1.5;
+  color: $color-black;
 }
 
 .heading-primary {
@@ -12,9 +12,10 @@ body {
 
   backface-visibility: hidden;
   display: block;
-  font-size: 5rem;
+  font-size: $biggest-font-size;
   font-weight: 900;
   letter-spacing: 0.1rem;
+  line-height: 1.2;
 
   &--main {
     @include respond(phone) {

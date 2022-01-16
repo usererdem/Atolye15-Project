@@ -71,7 +71,7 @@
   &__logo {
     &:link,
     &:visited {
-      font-size: $biggest-font-size;
+      font-size: $logo-font-size;
       color: $color-primary;
       text-decoration: none;
       transition: all 0.2s;
