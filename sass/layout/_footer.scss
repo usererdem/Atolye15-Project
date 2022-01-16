@@ -1,3 +1,183 @@
 .footer {
-  
+  max-width: 120rem;
+  width: 100%;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    padding-top: 9rem;
+  }
+
+  /* Left Side of The Footer */
+  &__left {
+    height: 100%;
+    width: auto;
+    min-width: 200px;
+
+    &--down {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__h3 {
+    font-size: $bigger-font-size-3;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: $color-grey-dark-3;
+    padding-bottom: 1.6rem;
+  }
+
+  &__span {
+    color: $color-primary;
+  }
+
+  &__text {
+    letter-spacing: -0.01em;
+    color: $color-grey-dark-3;
+    font-size: $mid-font-size;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 5.6rem;
+  }
+
+  &__form {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5.6rem;
+  }
+
+  &__select {
+    width: 100%;
+    padding: 18px 10px;
+    border: 1px solid $color-grey-light-2;
+    border-radius: 4px;
+    background-color: $color-grey-light-2;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: $default-font-size;
+  }
+
+  &__download {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.6rem;
+    max-width: 255px;
+
+    &--btn {
+      height: 100%;
+      width: auto;
+    }
+
+    &--link {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 160px;
+
+    &--link {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    height: 23px;
+    width: 23px;
+    fill: $color-black;
+
+    &:hover {
+      fill: $color-grey-dark-2;
+    }
+  }
+  /* Right Side of The Footer */
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 7.2rem;
+    margin-bottom: 5rem;
+  }
+
+  &__column {
+    display: flex;
+    flex: 1 1 25%;
+    flex-direction: column;
+    margin: 0 2.4rem 2.4rem 2.4rem;
+    width: auto;
+  }
+
+  &__li {
+    &--header {
+      width: 100%;
+      padding-bottom: 1.6rem;
+    }
+
+    &--h5 {
+      color: $color-grey-dark-3;
+      font-size: $bigger-font-size-1;
+      line-height: 1.333333;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      text-align: left;
+    }
+
+    &--text {
+      width: 100%;
+      word-break: break-word;
+      padding-bottom: 2rem;
+      padding-right: 0.8rem;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      position: relative;
+      font-size: $mid-font-size;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.15s, color 0.15s;
+      //Change for the <button> element
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid $color-black;
+    }
+  }
+
+  /* Down Part of The Footer */
+  &__copyrights {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+
+    &--div {
+      display: flex;
+      margin-bottom: 2rem;
+      width: auto;
+    }
+
+    &--text {
+      font-size: 1.1rem;
+      line-height: 1;
+      color: $color-grey-dark-2;
+    }
+  }
 }
