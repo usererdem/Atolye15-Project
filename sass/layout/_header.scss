@@ -1,0 +1,51 @@
+.header {
+  background-color: $color-white;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    font-size: $mid-font-size;
+    color: $color-black;
+
+    &--small {
+      font-size: $default-font-size;
+      color: $color-grey-dark-2;
+    }
+  }
+  &__img {
+    /* width: 60%; */
+    height: auto;
+    max-width: 60%;
+    
+    
+  }
+
+  &__button-box {
+    position: absolute;
+    right: 2rem;
+    bottom: 2.7rem;
+  }
+  @include respond(phone) {
+    padding-left: 10px;
+    &__button-box {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+}

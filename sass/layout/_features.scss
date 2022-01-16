@@ -1,0 +1,10 @@
+.features-box {
+  display: flex;
+}
+
+.feature {
+  
+  &__h3 {
+    font-size: $big-font-size;
+  }
+}

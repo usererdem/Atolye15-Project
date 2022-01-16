@@ -1,0 +1,380 @@
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-out;
+  z-index: 1000;
+  width: 100%;
+  /* background-color: $color-white; */
+
+  &--white {
+    background-color: $color-white;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-white;
+  padding: 1.3rem;
+  margin: 0 auto;
+  max-width: $grid-width;
+  /* padding-top: 0.5rem; */
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__login {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__withButton {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: $nav-link-font-size;
+      font-weight: 700;
+      color: $color-black;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  &__logo {
+    &:link,
+    &:visited {
+      font-size: $biggest-font-size;
+      color: $color-primary;
+      text-decoration: none;
+      transition: all 0.2s;
+      font-weight: 700;
+      margin-left: 1rem;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  &__img {
+    height: 60px;
+    width: 60px;
+  }
+
+  &--hidden {
+    transform: translateY(-88px);
+    opacity: 0;
+
+    @include respond(big-desktop) {
+      opacity: 0;
+    }
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &--shadow {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &__icon {
+    &--arrow {
+      display: none;
+    }
+
+    &--arrow1 {
+      display: none;
+    }
+  }
+}
+
+/* .nav-container {
+  width: 100%;
+} */
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: $color-black;
+}
+/* ================================================================================================================== */
+/* ================================================ TAB LAND SIZE=================================================== */
+/* ================================================================================================================ */
+
+@include respond(tab-land) {
+  .nav-container {
+    position: fixed;
+  }
+
+  .navigation {
+    margin: 1rem;
+
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: none;
+    max-width: none;
+
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1rem;
+      margin: 0;
+
+      flex-direction: column;
+      &--liSmall {
+        display: flex;
+        font-size: 1.8rem;
+        margin-left: 2.2rem;
+        color: $color-black;
+      }
+    }
+
+    
+
+    &__link {
+      &:link,
+      &:visited {
+        font-size: $big-font-size;
+        width: 100%;
+      }
+
+      &--small {
+        &:link,
+        &:visited {
+          font-weight: 400;
+          font-size: $mid-font-size;
+        }
+      }
+    }
+
+    &__withButton {
+      margin-right: 7rem;
+    }
+
+    &--hide {
+      display: none;
+    }
+
+    &--hidden {
+      opacity: 0;
+    }
+
+    &__list2 {
+      gap: 0;
+    }
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      &--arrow {
+        display: inline-block;
+        position: absolute;
+        right: 4rem;
+      }
+
+      &--arrow1 {
+        display: inline-block;
+        position: absolute;
+        right: 4rem;
+      }
+
+      &--arrowUp {
+        fill: $color-white;
+      }
+
+      &--white {
+       fill: $color-white;
+      }
+
+      &--blue {
+        fill: $color-primary;
+        width: 20px;
+        height: 20px;
+      }
+
+      &--hide {
+        display: none;
+      }
+    }
+  }
+
+  .navigation__arrow.active {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 2rem 0 2rem 2rem;
+    width: 99%;
+  }
+
+  .navigation__arrow1.active {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 2rem 0 2rem 2rem;
+    width: 99%;
+  }
+
+  .navigation.active {
+    border-bottom: none;
+    box-shadow: 13px 10px 12px -3px rgba($color-black, 0.2);
+  }
+
+  .navigation__menu {
+    display: flex;
+    flex-direction: column;
+    background: $color-white;
+    margin-left: 1rem;
+    align-items: flex-start;
+    width: 98.4%;
+    position: fixed;
+    top: 94px;
+    padding-left: 2.2rem;
+    /* max-width: $grid-width; */
+
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 13px 15px 15px -3px rgba($color-black, 0.2);
+  }
+
+  .navigation__menu.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 28.5%;
+    right: 4%;
+    cursor: pointer;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ================================================================================================================== */
+/* ================================================ TAB PORT SIZE=================================================== */
+/* ================================================================================================================ */
+@include respond(tab-port) {
+  .navigation__menu {
+    top: 85px;
+    width: 98%;
+  }
+}
+
+/* ================================================================================================================== */
+/* ================================================ PHONE SIZE=================================================== */
+/* ================================================================================================================ */
+@include respond(phone) {
+  .navigation__menu {
+    width: 95.5%;
+  }
+}
+/* @include respond(phone) {
+  .nav-container {
+    position: relative;
+  }
+
+  .navigation__menu {
+    display: flex;
+    flex-direction: column;
+    background: $color-white;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .navigation__menu.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  .navigation--hidden {
+    opacity: 0;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 21.5%;
+    right: 5%;
+    cursor: pointer;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+} */

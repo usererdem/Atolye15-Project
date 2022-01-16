@@ -1,0 +1,26 @@
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__heading {
+    padding-bottom: 9rem;
+  }
+
+  &__text {
+    font-size: $mid-font-size;
+    color: $color-grey-dark-2;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  &__h2 {
+    font-weight: 900;
+    font-size: 6rem;
+    color: $color-grey-dark-3;
+  }
+
+  &__vid {
+    border-radius: 3rem;
+  }
+}

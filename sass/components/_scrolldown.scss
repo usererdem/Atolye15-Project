@@ -1,0 +1,40 @@
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid $color-grey-dark-2;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  animation: moveInBottomScroll 0.5s ease-out 1.5s;
+  animation-fill-mode: backwards;
+  transform: translate(-13px, 0);
+
+  &:hover,
+  &:active {
+    transform: translate(-13px, 2px);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid $color-grey-dark-2;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+
+  &::before {
+    top: 30%;
+    animation-delay: 0.3s;
+  }
+}
