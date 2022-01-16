@@ -10,6 +10,9 @@
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify;
 }
 
 .tutorial {
@@ -30,5 +33,34 @@
     font-weight: 500;
     max-width: 675px;
     height: auto;
+  }
+
+  &__h3 {
+    font-size: $big-font-size;
+    font-weight: 900;
+    line-height: 1.3333;
+    padding-top: 2rem;
+  }
+
+  &__explanation {
+
+    &--p {
+      font-size: $mid-font-size;
+      line-height: 2;
+      text-align: left;
+      font-weight: 500;
+      padding-top: 2.4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    max-width: 47%;
+    position: relative;
+  }
+
+  &__button {
+    width: 100%;
+    height: 100%;
+    max-width: 27.5rem;
+    margin: 0 auto;
   }
 }

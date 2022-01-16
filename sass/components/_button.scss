@@ -101,3 +101,30 @@
     }
   }
 }
+
+.btn-outline {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 2rem 4rem;
+    display: inline-block;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    font-weight: 700;
+    line-height: 1;
+
+    color: $color-black;
+
+    //Change for the <button> element
+    border: 2px solid $color-black;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
+}

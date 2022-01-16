@@ -315,6 +315,24 @@ body {
       margin-bottom: 1.5rem;
       max-width: 180px; } }
 
+.btn-outline, .btn-outline:link, .btn-outline:visited {
+  text-decoration: none;
+  padding: 2rem 4rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer; }
+
+.btn-outline:hover {
+  color: #0069FF;
+  border: 2px solid #0069FF; }
+
 .form__group {
   position: relative;
   margin-top: 2rem; }
@@ -884,7 +902,10 @@ body {
 
 .row {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify; }
 
 .tutorial__h2 {
   font-size: 5rem;
@@ -902,6 +923,30 @@ body {
   max-width: 675px;
   height: auto; }
 
+.tutorial__h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.3333;
+  padding-top: 2rem; }
+
+.tutorial__explanation {
+  display: flex;
+  flex-direction: column;
+  max-width: 47%;
+  position: relative; }
+  .tutorial__explanation--p {
+    font-size: 1.8rem;
+    line-height: 2;
+    text-align: left;
+    font-weight: 500;
+    padding-top: 2.4rem; }
+
+.tutorial__button {
+  width: 100%;
+  height: 100%;
+  max-width: 27.5rem;
+  margin: 0 auto; }
+
 .section-about {
   background-color: #FAFAFA;
   padding: 6rem 0; }
@@ -914,4 +959,7 @@ body {
   padding: 6rem 0; }
 
 .section-features {
+  padding-bottom: 5rem; }
+
+.section-tutorial {
   padding-bottom: 5rem; }
