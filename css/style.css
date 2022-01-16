@@ -858,10 +858,11 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     border-bottom: 1px solid transparent;
+    color: #666666;
     transition: border-bottom 0.15s, color 0.15s;
     cursor: pointer; }
   .footer__link:hover, .footer__link:active {
-    border-bottom: 1px solid #000; }
+    border-bottom: 1px solid #666666; }
   .footer__copyrights {
     width: 100%;
     display: flex;

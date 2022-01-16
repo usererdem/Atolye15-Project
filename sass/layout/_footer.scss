@@ -150,6 +150,7 @@
       font-size: $mid-font-size;
       font-weight: 500;
       border-bottom: 1px solid transparent;
+      color: $color-grey-dark-2;
       transition: border-bottom 0.15s, color 0.15s;
       //Change for the <button> element
       cursor: pointer;
@@ -157,7 +158,7 @@
 
     &:hover,
     &:active {
-      border-bottom: 1px solid $color-black;
+      border-bottom: 1px solid $color-grey-dark-2;
     }
   }
 
