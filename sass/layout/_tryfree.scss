@@ -1,0 +1,75 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.try-free {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__h1 {
+    letter-spacing: -0.01em;
+  }
+
+  &__text {
+    &--big {
+      font-size: $bigger-font-size;
+      color: $color-black;
+      font-weight: 900;
+      margin-top: 4rem;
+      max-width: 60%;
+      letter-spacing: -0.01em;
+    }
+
+    &--medium {
+      font-size: $big-font-size;
+      color: $color-grey-dark-2;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+
+      margin-top: 2.4rem;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      position: relative;
+      font-size: $big-font-size;
+      color: $color-black;
+      font-weight: 700;
+
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.15s, color 0.15s;
+      //Change for the <button> element
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $color-black;
+    }
+  }
+}
+
+.button-wrap {
+  position: relative;
+  margin-left: 8rem;
+}
+
+.try-free__button {
+  z-index: 1000;
+}

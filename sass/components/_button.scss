@@ -128,3 +128,78 @@
     border: 2px solid $color-primary;
   }
 }
+
+.hexagon {
+  $hexagon-size: 170px;
+
+  width: ($hexagon-size * 0.645);
+  height: $hexagon-size;
+  background-color: $color-alert-green;
+  border-radius: ($hexagon-size / 10);
+  transition: transform 150ms ease;
+  
+  &:hover {
+    transform: rotate(15deg);
+    background-color: $color-primary;
+
+    &:before,
+    &:after {
+      background-color: $color-primary;
+    }
+
+    
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    border-radius: inherit;
+    background-color: $color-alert-green;
+
+    
+  }
+    
+  &:before {
+    transform: rotate(60deg);
+  }
+  
+  &:after {
+    transform: rotate(-60deg);
+  }
+
+  
+
+  &__text {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      padding: 4.5rem 3.2rem;
+      display: inline-block;
+      border-radius: 1rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: $bigger-font-size;
+      font-weight: 900;
+      color: $color-grey-light-2;
+
+      //Change for the <button> element
+      border: none;
+      cursor: pointer;
+      z-index: 20000;
+    }
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
