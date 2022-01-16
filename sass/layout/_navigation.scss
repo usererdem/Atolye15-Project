@@ -264,7 +264,7 @@
     align-items: flex-start;
     width: 98.4%;
     position: fixed;
-    top: 94px;
+    top: 90px;
     padding-left: 2.2rem;
     /* max-width: $grid-width; */
 
@@ -275,6 +275,8 @@
     border-top: none;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 13px 15px 15px -3px rgba($color-black, 0.2);
+
+    
   }
 
   .navigation__menu.active {
@@ -312,7 +314,7 @@
 /* ================================================================================================================ */
 @include respond(tab-port) {
   .navigation__menu {
-    top: 85px;
+    top: 80px;
     width: 98%;
   }
 }

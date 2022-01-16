@@ -1,0 +1,59 @@
+.yourpros {
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    max-width: 47%;
+    margin-top: 3.2rem;
+  }
+  &__h2 {
+    font-size: $bigger-font-size-4;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.25;
+    padding-bottom: 5rem;
+    max-width: 675px;
+  }
+
+  &__text {
+    font-size: $bigger-font-size;
+    text-align: center;
+    line-height: 1.3333;
+    font-weight: 500;
+    max-width: 675px;
+    height: auto;
+
+    &--medium {
+      font-size: $mid-font-size;
+      line-height: 2;
+      font-weight: 500;
+      text-align: left;
+      letter-spacing: -0.01em;
+    }
+
+    &--smaller {
+      font-size: $default-font-size;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__h3 {
+    font-size: $bigger-font-size-3;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 3.2rem;
+  }
+
+  &__img{
+
+    &--phone {
+      max-width: 50%;
+      overflow: hidden;
+      max-height: 70%;
+    }
+    
+  }
+}

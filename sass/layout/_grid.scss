@@ -1,4 +1,4 @@
-.row {
+/* .row {
   max-width: $grid-width;
   margin: 0 auto;
 
@@ -16,6 +16,23 @@
   }
 
   @include clearfix;
+} */
+
+.column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 8rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify;
 }
 
 .container {
