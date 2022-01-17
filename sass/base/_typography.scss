@@ -30,11 +30,11 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: $bigger-font-size-2;
   font-weight: 600;
   display: inline-block;
   color: $color-grey-dark-3;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   transition: all 0.2s;
 
   &--blue {
@@ -42,14 +42,6 @@ body {
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
-  }
-
-  @include respond(tab-port) {
-    font-size: 3rem;
-  }
-
-  @include respond(phone) {
-    font-size: 2.5rem;
   }
 
   &:hover {

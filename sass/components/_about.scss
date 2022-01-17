@@ -7,21 +7,34 @@
 
   &__h2 {
     margin-bottom: 2rem;
+    max-width: 560px;
   }
   
   &__images {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
     width: 100%;
     margin-top: 2rem;
+    opacity: 0.4;
+
+    &--div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+      width: auto;
+      height: 6.4rem;
+    }
   }
 
   &__img {
+    display: block;
     width: auto;
     max-width: 120px;
     min-width: 100px;
     max-height: 30px;
-
-    filter: opacity(45%);
   }
 }
