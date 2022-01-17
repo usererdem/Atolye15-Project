@@ -4,8 +4,9 @@
     text-align: center;
     font-weight: 900;
     line-height: 1.25;
-    padding-bottom: 5rem;
+    padding-bottom: 4.8rem;
     max-width: 675px;
+    letter-spacing: -0.01em;
   }
 
   &__text {
@@ -53,6 +54,16 @@
       &--text {
         text-align: left;
       }
+    }
+  }
+
+  @include respond(small-phone) {
+    &__text {
+      font-size: $bigger-font-size-2;
+    }
+
+    &__explanation {
+      max-width: 90%;
     }
   }
 }

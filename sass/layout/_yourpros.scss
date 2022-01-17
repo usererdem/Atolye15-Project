@@ -1,5 +1,4 @@
 .yourpros {
-
   &__column {
     display: flex;
     flex-direction: column;
@@ -69,6 +68,24 @@
         min-width: 450px;
         max-height: 400px;
       }
+    }
+
+    &__column {
+      width: 100%;
+      min-height: auto;
+      max-width: 100%;
+      flex-basis: auto;
+    }
+  }
+
+  @include respond(small-phone) {
+    &__text {
+      font-size: $bigger-font-size-2;
+      line-height: 1.5;
+    }
+
+    &__column {
+      width: 90%;
     }
   }
 }

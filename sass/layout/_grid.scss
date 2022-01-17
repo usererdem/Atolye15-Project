@@ -47,6 +47,12 @@
   justify-content: space-between;
   width: 100%;
   -webkit-box-pack: justify;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .container {

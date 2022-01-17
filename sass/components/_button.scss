@@ -44,10 +44,10 @@
 
   &--green-gradient {
     &,
-      &:link,
-      &:visited {
-        padding: 1.8rem 2rem;
-      }
+    &:link,
+    &:visited {
+      padding: 1.8rem 2rem;
+    }
     background: $color-primary-gradient;
     color: $color-white;
 
@@ -113,8 +113,6 @@
 }
 
 .hexagon {
-  $hexagon-size: 170px;
-
   width: ($hexagon-size * 0.645);
   height: $hexagon-size;
   background-color: $color-alert-green;
@@ -177,6 +175,32 @@
 
     &:hover {
       color: $color-white;
+    }
+  }
+
+  @include respond(phone) {
+    width: ($hexagon-size-2 * 0.645);
+    height: $hexagon-size-2;
+    border-radius: ($hexagon-size-2 / 10);
+
+    &__text {
+      &,
+      &:link,
+      &:visited {
+        padding: 3rem 2rem;
+      }
+    }
+  }
+
+  @include respond(small-phone) {
+    &__text {
+      &,
+      &:link,
+      &:visited {
+        padding: 4rem 3rem;
+      }
+  
+     
     }
   }
 }

@@ -363,6 +363,16 @@ body {
     z-index: 20000; }
   .hexagon__text:hover {
     color: #fff; }
+  @media only screen and (max-width: 48em) {
+    .hexagon {
+      width: 83.85px;
+      height: 130px;
+      border-radius: 13px; }
+      .hexagon__text, .hexagon__text:link, .hexagon__text:visited {
+        padding: 3rem 2rem; } }
+  @media only screen and (max-width: 30em) {
+    .hexagon__text, .hexagon__text:link, .hexagon__text:visited {
+      padding: 4rem 3rem; } }
 
 .form__group {
   position: relative;
@@ -690,14 +700,21 @@ body {
   .navigation__withButton {
     margin-right: 4.8rem; } }
 
-/* ================================================================================================================== */
+/* =============================================================================================================== */
 /* ================================================ PHONE SIZE=================================================== */
-/* ================================================================================================================ */
+/* ============================================================================================================= */
 @media only screen and (max-width: 48em) {
   .navigation__menu {
     width: 95.5%; }
   .navigation__withButton {
     margin-right: 4.5rem; } }
+
+/* ================================================================================================================= */
+/* ============================================== SMALL PHONE SIZE================================================= */
+/* =============================================================================================================== */
+@media only screen and (max-width: 30em) {
+  .navigation__menu {
+    top: 65px; } }
 
 .footer {
   max-width: 120rem;
@@ -757,7 +774,8 @@ body {
       width: auto; }
     .footer__download--link {
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-right: 1rem; }
   .footer__logo {
     width: 100%;
     display: flex;
@@ -839,6 +857,17 @@ body {
     .footer__link, .footer__link:link, .footer__link:visited {
       font-size: 1.4rem;
       font-weight: 500; } }
+  @media only screen and (max-width: 62em) {
+    .footer__content {
+      flex-direction: column;
+      padding-top: 4.8rem; }
+    .footer__logo {
+      margin-bottom: 3rem; }
+    .footer__right {
+      margin-left: 0; } }
+  @media only screen and (max-width: 30em) {
+    .footer__content {
+      padding-top: 4.5rem; } }
 
 /* .row {
   max-width: $grid-width;
@@ -885,6 +914,11 @@ body {
   justify-content: space-between;
   width: 100%;
   -webkit-box-pack: justify; }
+  @media only screen and (max-width: 62em) {
+    .yourpros-row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .container {
   width: 100%;
@@ -962,7 +996,13 @@ body {
   padding: 0 8rem 8rem 8rem; }
   @media only screen and (max-width: 62em) {
     .features-box {
-      padding: 0; } }
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      width: 70%; } }
+  @media only screen and (max-width: 30em) {
+    .features-box {
+      width: 80%; } }
 
 .feature {
   display: flex;
@@ -999,14 +1039,18 @@ body {
     color: #666666;
     font-weight: 500;
     margin-top: 2.5rem; }
+  @media only screen and (max-width: 62em) {
+    .feature {
+      padding: 2rem 2rem; } }
 
 .tutorial__h2 {
   font-size: 5rem;
   text-align: center;
   font-weight: 900;
   line-height: 1.25;
-  padding-bottom: 5rem;
-  max-width: 675px; }
+  padding-bottom: 4.8rem;
+  max-width: 675px;
+  letter-spacing: -0.01em; }
 
 .tutorial__text {
   font-size: 2.6rem;
@@ -1045,6 +1089,12 @@ body {
     max-width: 100%; }
     .tutorial__explanation--text {
       text-align: left; } }
+
+@media only screen and (max-width: 30em) {
+  .tutorial__text {
+    font-size: 3rem; }
+  .tutorial__explanation {
+    max-width: 90%; } }
 
 .yourpros__column {
   display: flex;
@@ -1097,7 +1147,19 @@ body {
     max-height: 300px; }
   .yourpros__img--phone {
     min-width: 450px;
-    max-height: 400px; } }
+    max-height: 400px; }
+  .yourpros__column {
+    width: 100%;
+    min-height: auto;
+    max-width: 100%;
+    flex-basis: auto; } }
+
+@media only screen and (max-width: 30em) {
+  .yourpros__text {
+    font-size: 3rem;
+    line-height: 1.5; }
+  .yourpros__column {
+    width: 90%; } }
 
 .wrap {
   width: 100%;
@@ -1141,10 +1203,33 @@ body {
     cursor: pointer; }
   .try-free__link:hover, .try-free__link:active {
     border-bottom: 2px solid #000; }
+  @media only screen and (max-width: 62em) {
+    .try-free__box {
+      flex-wrap: wrap; }
+    .try-free__h1 {
+      margin-bottom: 1rem; }
+    .try-free__text--big {
+      max-width: 100%; }
+    .try-free__text--medium {
+      font-size: 2rem;
+      color: #666666;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-top: 2.4rem; } }
+  @media only screen and (max-width: 30em) {
+    .try-free__text--big {
+      max-width: 85%;
+      margin-left: 2rem;
+      font-size: 1.8rem; }
+    .try-free__text--medium {
+      margin-left: 2rem; } }
 
 .button-wrap {
   position: relative;
   margin-left: 8rem; }
+  @media only screen and (max-width: 62em) {
+    .button-wrap {
+      margin-left: 5rem; } }
 
 .try-free__button {
   z-index: 1000; }
