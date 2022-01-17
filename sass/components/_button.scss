@@ -43,6 +43,11 @@
   }
 
   &--green-gradient {
+    &,
+      &:link,
+      &:visited {
+        padding: 1.8rem 2rem;
+      }
     background: $color-primary-gradient;
     color: $color-white;
 
@@ -104,9 +109,6 @@
   &:hover {
     color: $color-primary;
     border: 2px solid $color-primary;
-  }
-
-  @include respond(tab-port) {
   }
 }
 

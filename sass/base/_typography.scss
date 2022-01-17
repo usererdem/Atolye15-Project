@@ -19,24 +19,13 @@ body {
 
   &--main {
     @include respond(phone) {
-      letter-spacing: 0.5rem;
-      line-height: 1.1;
-      font-family: 5rem;
+      letter-spacing: 0.1rem;
+      line-height: 1;
     }
-    /* 
-      animation-delay: 3s; 
-      animation-iteration-count: 3;
-      */
   }
 
   &--sub {
-    /* animation: moveInRight 1s ease-out; */
     color: $color-primary;
-
-    @include respond(phone) {
-      letter-spacing: 0.5rem;
-      font-size: 2.5rem;
-    }
   }
 }
 
@@ -49,6 +38,7 @@ body {
   transition: all 0.2s;
 
   &--blue {
+    font-weight: 900;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;

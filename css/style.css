@@ -109,10 +109,13 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 62.5%; } }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     html {
       font-size: 62.5%; } }
   @media only screen and (max-width: 48em) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 30em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -122,7 +125,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 0; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     body {
       padding: 0; } }
   body li {
@@ -149,23 +152,12 @@ body {
   font-weight: 900;
   letter-spacing: 0.1rem;
   line-height: 1.2; }
-  .heading-primary--main {
-    /* 
-      animation-delay: 3s; 
-      animation-iteration-count: 3;
-      */ }
-    @media only screen and (max-width: 48em) {
-      .heading-primary--main {
-        letter-spacing: 0.5rem;
-        line-height: 1.1;
-        font-family: 5rem; } }
+  @media only screen and (max-width: 48em) {
+    .heading-primary--main {
+      letter-spacing: 0.1rem;
+      line-height: 1; } }
   .heading-primary--sub {
-    /* animation: moveInRight 1s ease-out; */
     color: #0069FF; }
-    @media only screen and (max-width: 48em) {
-      .heading-primary--sub {
-        letter-spacing: 0.5rem;
-        font-size: 2.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -175,10 +167,11 @@ body {
   letter-spacing: 2px;
   transition: all 0.2s; }
   .heading-secondary--blue {
+    font-weight: 900;
     background-image: linear-gradient(to right, #4490FC, #0459D2);
     -webkit-background-clip: text;
     color: transparent; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .heading-secondary {
       font-size: 3rem; } }
   @media only screen and (max-width: 48em) {
@@ -206,13 +199,13 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -227,7 +220,7 @@ body {
 
 .u-margin-right-medium {
   margin-right: 4rem !important; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .u-margin-right-medium {
       margin-right: 3rem !important; } }
 
@@ -281,6 +274,8 @@ body {
   .btn--green-gradient {
     background: linear-gradient(to right bottom, #55c57a, #286313);
     color: #fff; }
+    .btn--green-gradient, .btn--green-gradient:link, .btn--green-gradient:visited {
+      padding: 1.8rem 2rem; }
     .btn--green-gradient::after {
       background: linear-gradient(to right bottom, #55c57a, #286313); }
   .btn::after {
@@ -297,7 +292,7 @@ body {
   .btn--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .btn--green-gradient, .btn--green-gradient:link, .btn--green-gradient:visited {
       padding: 2.5rem 3.5rem; } }
 
@@ -371,7 +366,7 @@ body {
   font-size: 1.5rem;
   font-family: inherit;
   color: inherit;
-  padding: 1.5rem 2rem;
+  padding: 1.8rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -380,7 +375,7 @@ body {
   display: block;
   transition: all .3s;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .form__input {
       width: 88%;
       padding: 2.5rem 2rem; } }
@@ -436,7 +431,7 @@ body {
   .scroll-down::before {
     top: 30%;
     animation-delay: 0.3s; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .scroll-down {
       display: none; } }
 
@@ -468,7 +463,7 @@ body {
     position: absolute;
     right: 2rem;
     bottom: 2.5rem; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .header__text-box {
       width: 100%;
       min-width: auto;
@@ -493,8 +488,7 @@ body {
   width: 100%;
   transition: all 0.3s ease-out;
   z-index: 1000;
-  width: 100%;
-  /* background-color: $color-white; */ }
+  width: 100%; }
   .nav-container--white {
     background-color: #fff; }
 
@@ -505,8 +499,7 @@ body {
   background-color: #fff;
   padding: 1.3rem;
   margin: 0 auto;
-  max-width: 120rem;
-  /* padding-top: 0.5rem; */ }
+  max-width: 120rem; }
   .navigation__list {
     display: flex;
     list-style: none;
@@ -563,9 +556,6 @@ body {
   .navigation__icon--arrow1 {
     display: none; }
 
-/* .nav-container {
-  width: 100%;
-} */
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -580,7 +570,6 @@ body {
   .nav-container {
     position: fixed; }
   .navigation {
-    /* margin: 1rem; */
     border-radius: 1rem 1rem 0 0;
     border-bottom: none;
     max-width: none; }
@@ -607,7 +596,7 @@ body {
       font-size: 1.8rem;
       padding-top: 0.3rem; }
     .navigation__withButton {
-      margin-right: 7rem; }
+      margin-right: 6rem; }
     .navigation--hide {
       display: none; }
     .navigation--hidden {
@@ -657,9 +646,8 @@ body {
     align-items: flex-start;
     width: 98.4%;
     position: fixed;
-    top: 90px;
+    top: 80px;
     padding-left: 2.2rem;
-    /* max-width: $grid-width; */
     right: -100%;
     opacity: 0;
     transition: all 0.5s ease;
@@ -687,71 +675,22 @@ body {
 /* ================================================================================================================== */
 /* ================================================ TAB PORT SIZE=================================================== */
 /* ================================================================================================================ */
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 62em) {
   .navigation__menu {
     top: 80px;
-    width: 98%; } }
+    width: 98%; }
+  .navigation__withButton {
+    margin-right: 4.8rem; } }
 
 /* ================================================================================================================== */
 /* ================================================ PHONE SIZE=================================================== */
 /* ================================================================================================================ */
 @media only screen and (max-width: 48em) {
   .navigation__menu {
-    width: 95.5%; } }
+    width: 95.5%; }
+  .navigation__withButton {
+    margin-right: 4.5rem; } }
 
-/* @include respond(phone) {
-  .nav-container {
-    position: relative;
-  }
-
-  .navigation__menu {
-    display: flex;
-    flex-direction: column;
-    background: $color-white;
-    margin: 0;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-
-    right: -100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-  }
-
-  .navigation__menu.active {
-    right: 0;
-    opacity: 1;
-  }
-
-  .navigation--hidden {
-    opacity: 0;
-  }
-
-  #mobile-menu {
-    position: absolute;
-    top: 21.5%;
-    right: 5%;
-    cursor: pointer;
-    transform: translate(5%, 20%);
-  }
-
-  .menu-toggle .bar {
-    display: block;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-} */
 .footer {
   max-width: 120rem;
   width: 100%;
@@ -843,7 +782,7 @@ body {
     padding-bottom: 1.6rem; }
   .footer__li--h5 {
     color: #222222;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     line-height: 1.333333;
     font-weight: 900;
     letter-spacing: -0.01em;
@@ -926,7 +865,7 @@ body {
   justify-content: space-between;
   width: 100%;
   -webkit-box-pack: justify; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .row {
       flex-direction: column;
       justify-content: center;
@@ -961,7 +900,7 @@ body {
 
 .flex {
   display: flex; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .flex {
       flex-direction: column-reverse;
       align-items: center;
@@ -991,7 +930,7 @@ body {
   justify-content: space-around;
   width: 100%;
   padding: 0 8rem 8rem 8rem; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .features-box {
       padding: 0; } }
 
@@ -1040,7 +979,7 @@ body {
   max-width: 675px; }
 
 .tutorial__text {
-  font-size: 2rem;
+  font-size: 2.6rem;
   text-align: center;
   line-height: 1.3333;
   font-weight: 500;
@@ -1071,7 +1010,7 @@ body {
   max-width: 27.5rem;
   margin: 0 auto; }
 
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 62em) {
   .tutorial__explanation {
     max-width: 100%; }
     .tutorial__explanation--text {
@@ -1122,7 +1061,7 @@ body {
   overflow: hidden;
   max-height: 70%; }
 
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 62em) {
   .yourpros__img--connection {
     max-width: 400px;
     max-height: 300px; }
@@ -1205,7 +1144,7 @@ body {
 
 .section-try-free {
   padding: 11rem 0; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 62em) {
     .section-try-free {
       padding: 6rem 0; } }
 

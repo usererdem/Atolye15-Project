@@ -1,6 +1,6 @@
 "use strict";
 
-/* ---- Navigation Bar Scroll Animation and Shadow*/
+/* ---------- Navigation Bar Scroll Animation and Shadow ---------- */
 const navigation = document.querySelector(".nav-container");
 let lastScrollY = window.scrollY;
 
@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
   lastScrollY = window.scrollY;
 });
 
-/* Navigation menu for mobile devices */
+/* ---------- Selecting the elements ---------- */
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navigation__menu');
 const menuBorder = document.querySelector('.navigation');
@@ -46,13 +46,14 @@ const navSubItem4 = document.querySelector('.navigation__item--sub4');
 const navSubItem5 = document.querySelector('.navigation__item--sub5');
 const navSubItem6 = document.querySelector('.navigation__item--sub6');
 
+/* ---------- Navigation menu for mobile devices ---------- */
+
+/* Smaller device log in change to icon */
 if (window.innerWidth < 1200) {
   menuLogin.innerHTML = '<svg class="navigation__icon"><use xlink:href="img/sprite.svg#icon-user"></use></svg>';
 } else {
   menuLogin.innerHTML = '<a href="#home" class="navigation__link">Log In</a>';
 }
-
-/* menuButton.classList.toggle('navigation__menu'); */
 
 menu.addEventListener('click', function() {
   menu.classList.toggle('is-active');
@@ -96,15 +97,7 @@ navArrow1.addEventListener('click', function() {
   navIconArrowUp1.classList.toggle('navigation__icon--white')
 })
 
-
-
+/* ---------- Navigation code for big screen ---------- */
 if (window.innerWidth >= 1200) {
   navSubItem.classList.add('navigation--hide');
 }
-
-/* if (element.classList.contains(navArrow)) {
-  navArrow.addEventListener('click', function() {
-    navSubItem.classList.toggle('navigation--hide');
-    navSubItem.classList.toggle('navigation__item');
-  })
-} */

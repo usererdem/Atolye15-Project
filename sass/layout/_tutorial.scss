@@ -1,5 +1,4 @@
 .tutorial {
-
   &__h2 {
     font-size: $bigger-font-size-4;
     text-align: center;
@@ -10,7 +9,7 @@
   }
 
   &__text {
-    font-size: $big-font-size;
+    font-size: $bigger-font-size-1;
     text-align: center;
     line-height: 1.3333;
     font-weight: 500;
@@ -38,7 +37,6 @@
       font-weight: 500;
       padding-top: 2.4rem;
     }
-    
   }
 
   &__button {
@@ -57,5 +55,4 @@
       }
     }
   }
-
 }
