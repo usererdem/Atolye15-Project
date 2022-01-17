@@ -33,6 +33,20 @@
   justify-content: space-between;
   width: 100%;
   -webkit-box-pack: justify;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.yourpros-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify;
 }
 
 .container {

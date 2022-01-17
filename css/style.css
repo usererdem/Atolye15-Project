@@ -112,7 +112,7 @@ html {
   @media only screen and (max-width: 62.5em) {
     html {
       font-size: 62.5%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 48em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -154,7 +154,7 @@ body {
       animation-delay: 3s; 
       animation-iteration-count: 3;
       */ }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 48em) {
       .heading-primary--main {
         letter-spacing: 0.5rem;
         line-height: 1.1;
@@ -162,7 +162,7 @@ body {
   .heading-primary--sub {
     /* animation: moveInRight 1s ease-out; */
     color: #0069FF; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 48em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem;
         font-size: 2.5rem; } }
@@ -181,7 +181,7 @@ body {
   @media only screen and (max-width: 62.5em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 48em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -479,7 +479,7 @@ body {
       padding-right: 0; }
     .header__text {
       max-width: 450px; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 48em) {
     .header {
       padding-left: 10px; }
       .header__button-box {
@@ -695,7 +695,7 @@ body {
 /* ================================================================================================================== */
 /* ================================================ PHONE SIZE=================================================== */
 /* ================================================================================================================ */
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .navigation__menu {
     width: 95.5%; } }
 
@@ -911,6 +911,18 @@ body {
   justify-content: space-between;
   width: 100%;
   -webkit-box-pack: justify; }
+  @media only screen and (max-width: 62.5em) {
+    .row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.yourpros-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify; }
 
 .container {
   width: 100%;
@@ -1044,6 +1056,12 @@ body {
   max-width: 27.5rem;
   margin: 0 auto; }
 
+@media only screen and (max-width: 62.5em) {
+  .tutorial__explanation {
+    max-width: 100%; }
+    .tutorial__explanation--text {
+      text-align: left; } }
+
 .yourpros__column {
   display: flex;
   flex-direction: column;
@@ -1088,6 +1106,14 @@ body {
   max-width: 50%;
   overflow: hidden;
   max-height: 70%; }
+
+@media only screen and (max-width: 62.5em) {
+  .yourpros__img--connection {
+    max-width: 400px;
+    max-height: 300px; }
+  .yourpros__img--phone {
+    min-width: 450px;
+    max-height: 400px; } }
 
 .wrap {
   width: 100%;
@@ -1164,6 +1190,9 @@ body {
 
 .section-try-free {
   padding: 11rem 0; }
+  @media only screen and (max-width: 62.5em) {
+    .section-try-free {
+      padding: 6rem 0; } }
 
 .section-footer {
   padding: 0 4rem;

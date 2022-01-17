@@ -26,6 +26,10 @@
   }
 
   &__explanation {
+    display: flex;
+    flex-direction: column;
+    max-width: 47%;
+    position: relative;
 
     &--p {
       font-size: $mid-font-size;
@@ -34,10 +38,7 @@
       font-weight: 500;
       padding-top: 2.4rem;
     }
-    display: flex;
-    flex-direction: column;
-    max-width: 47%;
-    position: relative;
+    
   }
 
   &__button {
@@ -46,4 +47,15 @@
     max-width: 27.5rem;
     margin: 0 auto;
   }
+
+  @include respond(tab-port) {
+    &__explanation {
+      max-width: 100%;
+
+      &--text {
+        text-align: left;
+      }
+    }
+  }
+
 }

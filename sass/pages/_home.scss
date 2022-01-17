@@ -30,6 +30,10 @@
 
 .section-try-free {
   padding: 11rem 0;
+
+  @include respond(tab-port) {
+    padding: 6rem 0;
+  }
 }
 
 .section-footer {

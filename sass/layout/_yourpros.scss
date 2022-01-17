@@ -49,11 +49,26 @@
 
   &__img{
 
+   
     &--phone {
       max-width: 50%;
       overflow: hidden;
       max-height: 70%;
     }
     
+  }
+
+  @include respond(tab-port) {
+    &__img {
+      &--connection {
+        max-width: 400px;
+        max-height: 300px;
+      }
+
+      &--phone {
+        min-width: 450px;
+        max-height: 400px;
+      }
+    }
   }
 }
