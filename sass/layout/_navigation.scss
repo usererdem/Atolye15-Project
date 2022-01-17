@@ -297,40 +297,40 @@
 }
 
 /* ==================================== */
+/* ========== TAB MEDIUM SIZE ========== */
+/* ================================== */
+@include respond(tab-medium) {
+  .navigation {
+    &__menu {
+      top: 80px;
+      width: 99%;
+    }
+
+    &__withButton {
+      margin-right: 5rem;
+    }
+  }
+}
+
+/* ==================================== */
 /* ========== TAB PORT SIZE ========== */
 /* ================================== */
 @include respond(tab-port) {
   .navigation {
     &__menu {
-      top: 80px;
       width: 98%;
     }
 
     &__withButton {
-      margin-right: 4.8rem;
-    }
-  }
-}
-
-/* ================================= */
-/* ========== PHONE SIZE ========== */
-/* =============================== */
-@include respond(phone) {
-  .navigation {
-    &__menu {
-      width: 95.5%;
-    }
-
-    &__withButton {
-      margin-right: 4.5rem;
+      margin-right: 4rem;
     }
   } 
 }
 
 /* ======================================= */
-/* ========== SMALL PHONE SIZE ========== */
+/* ============= PHONE SIZE ============= */
 /* ===================================== */
-@include respond(small-phone) {
+@include respond(phone) {
   .navigation {
     &__menu {
       top: 65px;

@@ -16,16 +16,16 @@ html {
     font-size: 62.5%; //1 rem = 10px, 10/16 = 62.5%
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-medium) {
     // width < 1000?
     font-size: 62.5%; //1 rem = 10px, 10/16 = 62.5%
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     font-size: 62.5%; //1 rem = 10px, 10/16 = 62.5%
   }
 
-  @include respond(small-phone) {
+  @include respond(phone) {
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 
@@ -38,7 +38,7 @@ body {
   box-sizing: border-box;
   padding: 0;
 
-  @include respond(tab-port) {
+  @include respond(tab-medium) {
     padding: 0;
   }
 

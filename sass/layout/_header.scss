@@ -36,7 +36,7 @@
     bottom: 2.5rem;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-medium) {
     &__text-box {
       width: 100%;
       min-width: auto;
@@ -53,7 +53,7 @@
   }
 
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding-left: 10px;
     &__button-box {
       display: flex;

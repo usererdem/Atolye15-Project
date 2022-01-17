@@ -47,7 +47,7 @@
     margin: 0 auto;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-medium) {
     &__explanation {
       max-width: 100%;
 
@@ -57,7 +57,7 @@
     }
   }
 
-  @include respond(small-phone) {
+  @include respond(phone) {
     &__text {
       font-size: $bigger-font-size-2;
     }

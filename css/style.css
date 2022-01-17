@@ -181,13 +181,13 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -202,7 +202,7 @@ body {
 
 .u-margin-right-medium {
   margin-right: 4rem !important; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .u-margin-right-medium {
       margin-right: 3rem !important; } }
 
@@ -693,26 +693,26 @@ body {
     transform: translateY(-8px) rotate(-45deg); } }
 
 /* ==================================== */
-/* ========== TAB PORT SIZE ========== */
+/* ========== TAB MEDIUM SIZE ========== */
 /* ================================== */
 @media only screen and (max-width: 62em) {
   .navigation__menu {
     top: 80px;
-    width: 98%; }
+    width: 99%; }
   .navigation__withButton {
-    margin-right: 4.8rem; } }
+    margin-right: 5rem; } }
 
-/* ================================= */
-/* ========== PHONE SIZE ========== */
-/* =============================== */
+/* ==================================== */
+/* ========== TAB PORT SIZE ========== */
+/* ================================== */
 @media only screen and (max-width: 48em) {
   .navigation__menu {
-    width: 95.5%; }
+    width: 98%; }
   .navigation__withButton {
-    margin-right: 4.5rem; } }
+    margin-right: 4rem; } }
 
 /* ======================================= */
-/* ========== SMALL PHONE SIZE ========== */
+/* ============= PHONE SIZE ============= */
 /* ===================================== */
 @media only screen and (max-width: 30em) {
   .navigation__menu {
@@ -847,7 +847,7 @@ body {
       color: #666666; }
   @media only screen and (max-width: 75em) {
     .footer__content {
-      padding-top: 6rem; }
+      padding-top: 5rem; }
     .footer__column {
       margin: 0 1.5rem 2.4rem 1.5rem; }
     .footer__li--h5 {
@@ -859,7 +859,7 @@ body {
     .footer__link, .footer__link:link, .footer__link:visited {
       font-size: 1.4rem;
       font-weight: 500; } }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .footer__content {
       flex-direction: column;
       padding-top: 4.8rem; }
@@ -900,7 +900,7 @@ body {
   justify-content: space-between;
   width: 100%;
   -webkit-box-pack: justify; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .yourpros-row {
       flex-direction: column;
       justify-content: center;
@@ -912,7 +912,7 @@ body {
   max-width: 105rem; }
   @media only screen and (max-width: 75em) {
     .container {
-      width: 96%;
+      width: 92%;
       max-width: 120rem; } }
 
 .container-contact {
@@ -975,6 +975,9 @@ body {
   width: 100%;
   padding: 0 8rem 8rem 8rem; }
   @media only screen and (max-width: 62em) {
+    .features-box {
+      padding: 0 2rem 8rem 2rem; } }
+  @media only screen and (max-width: 48em) {
     .features-box {
       padding: 0;
       flex-direction: column;
@@ -1077,8 +1080,8 @@ body {
     max-width: 90%; } }
 
 .yourpros {
-  /* ---------- Tab Port Size ---------- */
-  /* ---------- Small Phone Size ---------- */ }
+  /* ---------- Tab Medium Size ---------- */
+  /* ---------- Phone Size ---------- */ }
   .yourpros__column {
     display: flex;
     flex-direction: column;
@@ -1150,7 +1153,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   /* ---------- Tab Port Size ---------- */
-  /* ---------- Small Phone Size ---------- */ }
+  /* ---------- Phone Size ---------- */ }
   .try-free__box {
     width: 100%;
     display: flex;
@@ -1182,7 +1185,7 @@ body {
     cursor: pointer; }
   .try-free__link:hover, .try-free__link:active {
     border-bottom: 2px solid #000; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .try-free__box {
       flex-wrap: wrap; }
     .try-free__h1 {
@@ -1206,7 +1209,7 @@ body {
 .button-wrap {
   position: relative;
   margin-left: 8rem; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .button-wrap {
       margin-left: 5rem; } }
 
@@ -1238,7 +1241,7 @@ body {
 
 .section-try-free {
   padding: 11rem 0; }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .section-try-free {
       padding: 6rem 0; } }
 
@@ -1249,4 +1252,4 @@ body {
   justify-content: center; }
   @media only screen and (max-width: 75em) {
     .section-footer {
-      padding: 0 1rem 0 2.2rem; } }
+      padding: 0 1rem 0 3rem; } }

@@ -15,7 +15,7 @@ body {
   line-height: 1.2;
 
   &--main {
-    @include respond(phone) {
+    @include respond(tab-port) {
       letter-spacing: 0.1rem;
       line-height: 1;
     }

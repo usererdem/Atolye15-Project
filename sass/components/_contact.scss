@@ -22,7 +22,7 @@
 
     box-shadow: 0 1rem 2rem rgba($color-black, .3);
 
-    @include respond(tab-port) {
+    @include respond(tab-medium) {
       width: 88%;
       padding: 2.5rem 2rem;
     }

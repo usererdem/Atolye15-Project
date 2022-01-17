@@ -90,8 +90,8 @@
     }
   }
 
-  /* ---------- Small Phone Size ---------- */
-  @include respond(small-phone) {
+  /* ---------- Phone Size ---------- */
+  @include respond(phone) {
     &__text {
       &--big {
         max-width: 85%;

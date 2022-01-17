@@ -17,7 +17,7 @@
   width: 100%;
   -webkit-box-pack: justify;
 
-  @include respond(tab-port) {
+  @include respond(tab-medium) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
   max-width: $grid-width-2;
 
   @include respond(tab-land) {
-    width: 96%;
+    width: 92%;
     max-width: $grid-width;
   }
 }
@@ -58,7 +58,7 @@
 .flex {
   display: flex;
 
-  @include respond(tab-port) {
+  @include respond(tab-medium) {
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
