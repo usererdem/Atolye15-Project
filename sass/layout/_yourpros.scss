@@ -57,6 +57,7 @@
     
   }
 
+  /* ---------- Tab Port Size ---------- */
   @include respond(tab-port) {
     &__img {
       &--connection {
@@ -78,6 +79,7 @@
     }
   }
 
+  /* ---------- Small Phone Size ---------- */
   @include respond(small-phone) {
     &__text {
       font-size: $bigger-font-size-2;

@@ -64,6 +64,7 @@
     }
   }
 
+  /* ---------- Tab Port Size ---------- */
   @include respond(tab-port) {
     &__box {
       flex-wrap: wrap;
@@ -89,6 +90,7 @@
     }
   }
 
+  /* ---------- Small Phone Size ---------- */
   @include respond(small-phone) {
     &__text {
       &--big {

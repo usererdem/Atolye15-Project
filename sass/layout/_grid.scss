@@ -1,23 +1,6 @@
-/* .row {
-  max-width: $grid-width;
-  margin: 0 auto;
-
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
-
-    @include respond(tab-port) {
-      margin-bottom: $gutter-vertical-small;
-    }
-  }
-
-  @include respond(tab-port) {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-
-  @include clearfix;
-} */
-
+/* ---------------------------------------------------- */
+/* ---------- Some reusable code for layout ---------- */
+/* -------------------------------------------------- */
 .column {
   width: 100%;
   display: flex;
@@ -64,12 +47,6 @@
     width: 96%;
     max-width: $grid-width;
   }
-  /* @include respond(tab-port) {
-    max-width: $grid-width-2;
-  }
-  @include respond(phone) {
-    max-width: $grid-width-3;
-  } */
 }
 
 .container-contact {

@@ -139,13 +139,11 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.5;
   color: #000; }
 
 .heading-primary {
   color: #000;
-  /*  text-transform: uppercase; */
   backface-visibility: hidden;
   display: block;
   font-size: 6rem;
@@ -174,16 +172,6 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.heading-tertiary {
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.paragraph {
-  font-size: 1.4rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -250,6 +238,9 @@ body {
     min-width: 100px;
     max-height: 30px; }
 
+/* --------------------------------------------------------- */
+/* -------------------- Default Button -------------------- */
+/* ------------------------------------------------------- */
 .btn {
   margin-right: 1rem; }
   .btn, .btn:link, .btn:visited {
@@ -302,6 +293,9 @@ body {
     .btn--green-gradient, .btn--green-gradient:link, .btn--green-gradient:visited {
       padding: 2.5rem 3.5rem; } }
 
+/* -------------------------------------------------------------- */
+/* -------------------- Button With Outline -------------------- */
+/* ------------------------------------------------------------ */
 .btn-outline, .btn-outline:link, .btn-outline:visited {
   text-decoration: none;
   padding: 2rem 4rem;
@@ -320,6 +314,9 @@ body {
   color: #0069FF;
   border: 2px solid #0069FF; }
 
+/* --------------------------------------------------------- */
+/* -------------------- Hexagon Button -------------------- */
+/* ------------------------------------------------------- */
 .hexagon {
   width: 109.65px;
   height: 170px;
@@ -374,6 +371,9 @@ body {
     .hexagon__text, .hexagon__text:link, .hexagon__text:visited {
       padding: 4rem 3rem; } }
 
+/* -------------------------------------------------------- */
+/* ---------- Form Element to ask email address ---------- */
+/* ------------------------------------------------------ */
 .form__group {
   position: relative;
   margin-top: 2rem; }
@@ -417,6 +417,9 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+/* ------------------------------------------- */
+/* ---------- Scrolldown Animation ---------- */
+/* ----------------------------------------- */
 .scroll-down {
   height: 50px;
   width: 30px;
@@ -456,8 +459,7 @@ body {
   min-height: 95vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* Tab-Land size Query --- Lower than 1000px */ }
+  justify-content: center; }
   .header__text-box {
     display: flex;
     flex-direction: column;
@@ -581,9 +583,9 @@ body {
   transition: all 0.3s ease-in-out;
   background-color: #000; }
 
-/* ================================================================================================================== */
-/* ================================================ TAB LAND SIZE=================================================== */
-/* ================================================================================================================ */
+/* ===================================== */
+/* ========== TAB LAND SIZE ========== */
+/* ================================= */
 @media only screen and (max-width: 75em) {
   .nav-container {
     position: fixed; }
@@ -690,9 +692,9 @@ body {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg); } }
 
-/* ================================================================================================================== */
-/* ================================================ TAB PORT SIZE=================================================== */
-/* ================================================================================================================ */
+/* ==================================== */
+/* ========== TAB PORT SIZE ========== */
+/* ================================== */
 @media only screen and (max-width: 62em) {
   .navigation__menu {
     top: 80px;
@@ -700,18 +702,18 @@ body {
   .navigation__withButton {
     margin-right: 4.8rem; } }
 
-/* =============================================================================================================== */
-/* ================================================ PHONE SIZE=================================================== */
-/* ============================================================================================================= */
+/* ================================= */
+/* ========== PHONE SIZE ========== */
+/* =============================== */
 @media only screen and (max-width: 48em) {
   .navigation__menu {
     width: 95.5%; }
   .navigation__withButton {
     margin-right: 4.5rem; } }
 
-/* ================================================================================================================= */
-/* ============================================== SMALL PHONE SIZE================================================= */
-/* =============================================================================================================== */
+/* ======================================= */
+/* ========== SMALL PHONE SIZE ========== */
+/* ===================================== */
 @media only screen and (max-width: 30em) {
   .navigation__menu {
     top: 65px; } }
@@ -719,9 +721,9 @@ body {
 .footer {
   max-width: 120rem;
   width: 100%;
-  /* Left Side of The Footer */
-  /* Right Side of The Footer */
-  /* Down Part of The Footer */ }
+  /* ---------- Left Side of The Footer ---------- */
+  /* ---------- Right Side of The Footer ---------- */
+  /* ---------- Down Part of The Footer ---------- */ }
   .footer__content {
     width: 100%;
     display: flex;
@@ -869,25 +871,9 @@ body {
     .footer__content {
       padding-top: 4.5rem; } }
 
-/* .row {
-  max-width: $grid-width;
-  margin: 0 auto;
-
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
-
-    @include respond(tab-port) {
-      margin-bottom: $gutter-vertical-small;
-    }
-  }
-
-  @include respond(tab-port) {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-
-  @include clearfix;
-} */
+/* ---------------------------------------------------- */
+/* ---------- Some reusable code for layout ---------- */
+/* -------------------------------------------------- */
 .column {
   width: 100%;
   display: flex;
@@ -923,13 +909,7 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 105rem;
-  /* @include respond(tab-port) {
-    max-width: $grid-width-2;
-  }
-  @include respond(phone) {
-    max-width: $grid-width-3;
-  } */ }
+  max-width: 105rem; }
   @media only screen and (max-width: 75em) {
     .container {
       width: 96%;
@@ -1096,70 +1076,67 @@ body {
   .tutorial__explanation {
     max-width: 90%; } }
 
-.yourpros__column {
-  display: flex;
-  flex-direction: column;
-  max-width: 47%;
-  margin-top: 3.2rem; }
-
-.yourpros__h2 {
-  font-size: 5rem;
-  text-align: center;
-  font-weight: 900;
-  line-height: 1.25;
-  padding-bottom: 5rem;
-  max-width: 675px; }
-
-.yourpros__text {
-  font-size: 2.4rem;
-  text-align: center;
-  line-height: 1.3333;
-  font-weight: 500;
-  max-width: 675px;
-  height: auto; }
-  .yourpros__text--medium {
-    font-size: 1.8rem;
-    line-height: 2;
-    font-weight: 500;
-    text-align: left;
-    letter-spacing: -0.01em; }
-  .yourpros__text--smaller {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 2rem; }
-
-.yourpros__h3 {
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  margin-bottom: 3.2rem; }
-
-.yourpros__img--phone {
-  max-width: 50%;
-  overflow: hidden;
-  max-height: 70%; }
-
-@media only screen and (max-width: 62em) {
-  .yourpros__img--connection {
-    max-width: 400px;
-    max-height: 300px; }
-  .yourpros__img--phone {
-    min-width: 450px;
-    max-height: 400px; }
+.yourpros {
+  /* ---------- Tab Port Size ---------- */
+  /* ---------- Small Phone Size ---------- */ }
   .yourpros__column {
-    width: 100%;
-    min-height: auto;
-    max-width: 100%;
-    flex-basis: auto; } }
-
-@media only screen and (max-width: 30em) {
+    display: flex;
+    flex-direction: column;
+    max-width: 47%;
+    margin-top: 3.2rem; }
+  .yourpros__h2 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.25;
+    padding-bottom: 5rem;
+    max-width: 675px; }
   .yourpros__text {
-    font-size: 3rem;
-    line-height: 1.5; }
-  .yourpros__column {
-    width: 90%; } }
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 1.3333;
+    font-weight: 500;
+    max-width: 675px;
+    height: auto; }
+    .yourpros__text--medium {
+      font-size: 1.8rem;
+      line-height: 2;
+      font-weight: 500;
+      text-align: left;
+      letter-spacing: -0.01em; }
+    .yourpros__text--smaller {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 2rem; }
+  .yourpros__h3 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 3.2rem; }
+  .yourpros__img--phone {
+    max-width: 50%;
+    overflow: hidden;
+    max-height: 70%; }
+  @media only screen and (max-width: 62em) {
+    .yourpros__img--connection {
+      max-width: 400px;
+      max-height: 300px; }
+    .yourpros__img--phone {
+      min-width: 450px;
+      max-height: 400px; }
+    .yourpros__column {
+      width: 100%;
+      min-height: auto;
+      max-width: 100%;
+      flex-basis: auto; } }
+  @media only screen and (max-width: 30em) {
+    .yourpros__text {
+      font-size: 3rem;
+      line-height: 1.5; }
+    .yourpros__column {
+      width: 90%; } }
 
 .wrap {
   width: 100%;
@@ -1171,7 +1148,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column; }
+  flex-direction: column;
+  /* ---------- Tab Port Size ---------- */
+  /* ---------- Small Phone Size ---------- */ }
   .try-free__box {
     width: 100%;
     display: flex;

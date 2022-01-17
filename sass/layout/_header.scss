@@ -36,7 +36,6 @@
     bottom: 2.5rem;
   }
 
-  /* Tab-Land size Query --- Lower than 1000px */
   @include respond(tab-port) {
     &__text-box {
       width: 100%;
